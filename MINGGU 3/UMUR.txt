@@ -1,1 +1,0 @@
-UMUR = 18 TAHUN
