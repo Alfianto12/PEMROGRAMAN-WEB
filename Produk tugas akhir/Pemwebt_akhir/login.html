@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body background="WPbgdaun.jpg"></body>
+    <title>Altogoweb destination and History</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, intial-scale=1">
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                min-height: 100vh;
+                font-family: sans-serif;
+            }
+            .data{
+                width: 300px;
+                background: linear-gradient(60deg, #ff3c00, #ec7716, #c9791d);
+                height: 200px;
+                padding: 80px 40px;
+                border: 4px solid #1a1a1a;
+                border-image: linear-gradient(60deg, #1a1a1a, #929292, #d6d6d6);
+                border-image-slice: 1;
+                border-radius: 10px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            label{
+                font-size: 10pt;
+                color: rgb(7, 7, 7);
+            }
+            input[type="text"],textarea{
+                padding: 5px;
+                width: 95%;
+                background: #efefef;
+                border: 0;
+                font-size: 10pt;
+                margin: 6px;
+            }
+            button{
+                width: 100%;
+                padding: 5px 0;
+                border: none;
+                background-color:#2979ff;
+                font-size: 18px;
+                color: #fafafa;
+            }
+            .php{
+                color: #fff;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div align="center">
+        <div class="data">
+            <form action="#" method="POST" onsubmit="validasi()">
+                <div>
+                    <label>Nama Lengkap</label>
+                    <input type="text" name="nama" id="nama">
+                </div>
+                <div>
+                    <label>Alamat</label>
+                    <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+                </div>
+                <div>
+                    <button><a href="home.html">Log in </a></button>
+                </div>
+            </form>
+        </div>
+
+            <script>
+                function validasi(){
+                    var Nama = document.getElementById("nama").value;
+                    var Alamat = document.getElementById("alamat").value;
+
+                    if (Nama !="" && Alamat !=""){
+                        return true
+                    }else{
+                        alert ("Anda harus menigisi data dengan lengkap")
+                    }
+                }
+            </script>
+    </body>
+    
+</html>
